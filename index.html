@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nama Anda — Front-end &amp; IoT Developer</title>
+<meta name="description" content="Portofolio Nama Anda, Front-end dan IoT Developer yang membangun antarmuka web untuk memantau dan mengontrol perangkat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#beranda">Kevin</a>
+    <nav id="nav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#proyek">Proyek</a></li>
+        <li><a href="#pengalaman">Pengalaman</a></li>
+        <!-- <li><a href="#sertifikat">Sertifikat</a></li> -->
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;gap:.5rem">
+      <button class="icon-btn" id="theme-btn" aria-label="Ganti tema terang atau gelap">◐</button>
+      <button class="icon-btn" id="menu-btn" aria-label="Buka menu" aria-expanded="false" aria-controls="nav">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="beranda">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Saya membuat antarmuka web dan projek IoT.</h1>
+        <p>Halo, saya Kevin, front-end developer yang juga mengerjakan perangkat IoT. Saya membangun dashboard dan panel kontrol yang menampilkan data sensor secara langsung, dari rangkaian di meja sampai halaman web yang rapi.</p>
+        <div class="actions">
+          <a class="btn primary" href="#proyek">Lihat proyek</a>
+          <a class="btn ghost" href="#kontak">Hubungi saya</a>
+        </div>
+      </div>
+      <aside class="status" aria-label="Ringkasan">
+        <h2>Ringkasan singkat</h2>
+        <dl>
+          <div><dt>Ketersediaan</dt><dd><span class="dot"></span>Terbuka untuk proyek baru</dd></div>
+          <div><dt>Lokasi</dt><dd>Kendari, Sulawesi Tenggara (remote)</dd></div>
+          <div><dt>Fokus</dt><dd>Dashboard real-time, panel kontrol perangkat, situs web</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section id="tentang">
+    <div class="wrap about">
+      <div>
+        <h2>Tentang saya</h2>
+        <p>Saya senang bekerja di titik temu perangkat lunak dan perangkat keras. Saya merakit rangkaian dengan sensor dan mikrokontroler, lalu membangun tampilan web agar datanya mudah dibaca dan perangkatnya mudah dikendalikan.</p>
+        <p>Dengan menguasai dua sisi ini, saya bisa menyelesaikan satu produk dari ujung ke ujung tanpa harus menunggu tim lain, mulai dari pembacaan sensor sampai tombol di layar.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><strong>4+</strong><span>tahun pengalaman</span></div>
+        <div class="fact"><strong>5+</strong><span>proyek selesai</span></div>
+        <div class="fact"><strong>2+</strong><span>perangkat IoT terhubung</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="keahlian">
+    <div class="wrap">
+      <h2>Keahlian</h2>
+      <p class="lead">Alat yang saya pakai sehari-hari untuk merancang, membangun, dan merilis produk.</p>
+      <div class="skills">
+        <article class="skill">
+          <h3>Front-end</h3>
+          <p>Antarmuka responsif dan aksesibel, dengan grafik yang memperbarui diri secara langsung.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Chart.js</li></ul>
+        </article>
+        <article class="skill">
+          <h3>IoT dan perangkat</h3>
+          <p>Merakit dan memprogram perangkat yang membaca sensor serta mengendalikan aktuator.</p>
+          <ul class="tags"><li>ESP32</li><li>Arduino</li><li>Raspberry Pi</li><li>C/C++</li><li>Sensor</li></ul>
+        </article>
+        <article class="skill">
+          <h3>Konektivitas dan data</h3>
+          <p>Menghubungkan perangkat ke web dan menyimpan datanya dengan rapi.</p>
+          <ul class="tags"><li>MQTT</li><li>WebSocket</li><li>REST API</li><li>Firebase</li><li>Node.js</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyek">
+    <div class="wrap">
+      <h2>Proyek pilihan</h2>
+      <p class="lead">Beberapa pekerjaan terbaru.</p>
+      <div class="filters" role="group" aria-label="Filter proyek">
+        <button class="filter" data-filter="semua" aria-pressed="true">Semua</button>
+        <button class="filter" data-filter="iot" aria-pressed="false">IoT</button>
+        <button class="filter" data-filter="dashboard" aria-pressed="false">Dashboard</button>
+        <button class="filter" data-filter="web" aria-pressed="false">Web</button>
+      </div>
+      <div class="projects">
+        <article class="project" data-cat="iot dashboard">
+          <div class="thumb" aria-hidden="true">Monitoring Suhu</div>
+          <div class="body">
+            <h3>Dashboard monitoring suhu dan kelembapan</h3>
+            <p>Sensor ESP32 mengirim data lewat MQTT, lalu grafik di web memperbarui nilainya setiap beberapa detik dan memberi peringatan saat batas terlampaui.</p>
+            <ul class="tags"><li>ESP32</li><li>MQTT</li><li>React</li><li>Chart.js</li></ul>
+            <!-- <div class="links"><a href="#">Lihat demo</a><a href="#">Kode sumber</a></div> -->
+          </div>
+        </article>
+        <article class="project" data-cat="iot web">
+          <div class="thumb" aria-hidden="true">Smart Home</div>
+          <div class="body">
+            <h3>Panel kontrol smart home</h3>
+            <p>Aplikasi web untuk menyalakan lampu dan mengatur perangkat rumah dari HP, dengan status perangkat yang selalu sinkron.</p>
+            <ul class="tags"><li>Arduino</li><li>WebSocket</li><li>JavaScript</li></ul>
+            <!-- <div class="links"><a href="#">Lihat demo</a><a href="#">Kode sumber</a></div> -->
+          </div>
+        </article>
+        <article class="project" data-cat="iot dashboard">
+          <div class="thumb" aria-hidden="true">Irigasi Otomatis</div>
+          <div class="body">
+            <h3>Sistem irigasi otomatis</h3>
+            <p>Sensor kelembapan tanah mengatur pompa air secara otomatis. Riwayat penyiraman dan kondisi lahan bisa dilihat lewat dashboard.</p>
+            <ul class="tags"><li>ESP32</li><li>Firebase</li><li>React</li></ul>
+            <!-- <div class="links"><a href="#">Lihat demo</a><a href="#">Kode sumber</a></div> -->
+          </div>
+        </article>
+        <article class="project" data-cat="web">
+          <div class="thumb" aria-hidden="true">Company Profile</div>
+          <div class="body">
+            <h3>Situs profil perusahaan</h3>
+            <p>Situs multi-halaman yang responsif dengan fokus pada kecepatan muat dan aksesibilitas.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <!-- <div class="links"><a href="#">Lihat situs</a></div> -->
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="pengalaman">
+    <div class="wrap">
+      <h2>Pengalaman</h2>
+      <p class="lead">Perjalanan karier saya, dari yang terbaru.</p>
+      <ol class="timeline">
+        <li>
+          <time>2022 – 2026</time>
+          <h3>S1 Teknologi Informasi, Institut Sains Teknologi dan Kesehatan 'Aisyiyah Kendari</h3>
+          <p>Lulus dengan fokus pada sistem tertanam dan pengembangan web.</p>
+        </li>
+        <li>
+          <time>2022 – sekarang</time>
+          <h3>Front-end dan IoT Developer</h3>
+          <p>Membangun dashboard monitoring dan sistem kontrol berbasis IoT untuk klien, dari perakitan perangkat sampai antarmuka web.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- <section id="sertifikat">
+    <div class="wrap">
+      <h2>Sertifikat</h2>
+      <p class="lead">Pelatihan dan sertifikasi yang mendukung pekerjaan saya. Klik foto untuk memperbesar.</p>
+      <div class="certs">
+        <figure class="cert">
+          <button type="button" class="cert-open" aria-label="Perbesar sertifikat Front-End Web Developer">
+            <img src="C:\Users\Kevil\Downloads\portofolio2\portofolio\images\sertifikat\Screenshot 2026-10-20 170035.png" alt="Sertifikat Front-End Web Developer" loading="lazy">
+          </button>
+          <figcaption>Front-End Web Developer</figcaption>
+        </figure>
+        <figure class="cert">
+          <button type="button" class="cert-open" aria-label="Perbesar sertifikat Internet of Things (IoT) Fundamentals">
+            <img src="images/sertifikat/contoh.svg" alt="Sertifikat Internet of Things (IoT) Fundamentals" loading="lazy">
+          </button>
+          <figcaption>Internet of Things (IoT) Fundamentals</figcaption>
+        </figure>
+        <figure class="cert">
+          <button type="button" class="cert-open" aria-label="Perbesar sertifikat Pemrograman Mikrokontroler">
+            <img src="images/sertifikat/contoh.svg" alt="Sertifikat Pemrograman Mikrokontroler" loading="lazy">
+          </button>
+          <figcaption>Pemrograman Mikrokontroler</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section> -->
+
+  <dialog id="lightbox" aria-label="Tampilan sertifikat">
+    <button type="button" class="lb-close" aria-label="Tutup">✕</button>
+    <img src="" alt="">
+    <p></p>
+  </dialog>
+
+  <section id="kontak">
+    <div class="wrap contact">
+      <div>
+        <h2>Mari bekerja sama</h2>
+        <p class="lead" style="margin-bottom:0">Ceritakan proyek Anda. Saya biasanya membalas dalam 1 hari kerja.</p>
+        <ul>
+          <li>Email: <a href="kevinengginerring@gmail.com">kevinengginerring@gmail.com</a></li>
+          <!-- <li>LinkedIn: <a href="">linkedin.com/in/namaanda</a></li> -->
+          <li>GitHub: <a href="https://github.com/kevin046-hub">github.com/kevin</a></li>
+        </ul>
+      </div>
+      <form id="contact-form" novalidate>
+        <label>Nama <input type="text" name="nama" autocomplete="name" required></label>
+        <label>Email <input type="email" name="email" autocomplete="email" required></label>
+        <label>Pesan <textarea name="pesan" required></textarea></label>
+        <button class="btn primary" type="submit">Kirim pesan</button>
+        <p id="form-note" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Nama Anda. Semua hak dilindungi.</span>
+    <a href="#beranda">Kembali ke atas</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
